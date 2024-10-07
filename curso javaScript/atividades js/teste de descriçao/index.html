@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo/style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article id="login">
+        <div>
+            <header>
+                <h1>Login de acesso</h1>
+            </header>
+            <p>Acesso: <input type="text" id="acesso" placeholder="👤" required maxlength="7"></p>
+            <p>Senha: <input type="password" id="senha" placeholder="🔐" required maxlength="7"> <input type="button" value="Entrar" id="button" onclick="verificar()"></p>
+            <span>maximo de 7 caracteres:</span>
+            <p id="resposta"></p><a href="/" id="novasenha"></a>
+        </div>
+        
+    </article>
+
+    <script src="script/script.js" ></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistemas de multas</h1>
+    velocidade do carro: <input type="number" name="txt" id="txt"> km/h
+    <input type="button" value="confirmar..." onclick="clique()">
+    <p id="multa">
+
+    </p>
+    <script>
+        
+        function clique() {
+            var txt = document.querySelector("#txt")
+            var res = document.querySelector('#multa')
+            var valor = Number(txt.value)
+           
+            if (valor >= 60){
+                 res.innerHTML = `voce foi multado <br>`
+            }
+            
+            
+             // se for compara numero pegar o seu valor na linha 20 e declarar inteiro
+            res.innerHTML += `dirja com o sinto de seguraça ! <br>`
+           
+        }
+    </script>
+</body>
+</html>

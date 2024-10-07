@@ -1,0 +1,51 @@
+body {
+    font: normal 20pt;
+    font-family: arial;
+    background: url(https://i.gifer.com/2ZOc.gif);
+    background-size: 1550px;  
+}
+h1 {
+    text-align: center;
+}
+article {
+    background: #e8eae8;
+    margin: auto;
+    width: 350px;
+    padding: 30px;
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.26);
+    border-radius: 30px;
+    margin-top: 150px;
+    border: 1px black solid;
+    
+}
+input {
+    
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.349);
+    border: 0 none;
+    outline: 0;
+    border-radius: 10px;
+    padding: 5px;
+}
+p {
+    padding: 5px;
+}
+header {
+    margin-bottom: 40px;
+}
+span {
+    font-size: 10px;
+    display: inline-block;
+}
+#novasenha {
+    display: block;
+    text-align: end;
+    
+    
+}
+input::placeholder {
+    text-align: end;
+
+}
+#button {
+    background: lightblue;
+}

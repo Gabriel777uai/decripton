@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM</title>
+</head>
+<body style="background:lightblue; font: 18pt Arial;">
+    <h1>Iniciando estudos do DOM</h1>
+    <h2 id="h2">aqui vai o resultado</h2>
+    <!-- para pegar o valor acima eu coloquei um (id), mais abaixo explico -->
+    <p><strong>aprendendo a usar o DOM  em javaScript</strong></p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var div = document.getElementById('msg')
+        //do mesmo jeio que peguei o valor do prompt eu irei pegar o valor dentro do documento, por isso do document la na frente, nisso eu coloquei um valor (id) na div que se chama 'msg' que no caso a propriedade getElementByid que e para pegar o valor dentro do document para alteralo  
+        var corpo = document.body
+        //irei pegar o valor no document, eu vou pegar o body e posso alteralo com o css 
+        var p1 = window.document.getElementsByTagName('p')[0]
+        // no p1 que eu usei a mesma propriedae getElementsByTagName(), mas no caso essa e diferente nela eu pego o seu elemento HTML direto sem precisar do id so digitar o (p) dentro dos parentes e tenho um contador nele que e os colchetes [] do mesmo jeito na ordem do 0, 1, 2, 3... se o primeiro e 0 entao nos pegaremos no documento HTML o primeiro paragarfo escrito e podemos modificalo com as propriedades css. Quando o coletor estiver no plural e para pegar mais que um 
+        document.write("assim esta ecrito " + p1.innerHTML)
+        //para trocar oque esta escrito no p1 eu pedo o documneto e coloco a propriedade de escrever e coloco a string para complementar e concatenar com o p1, para pegar o HTML certo com o negrito e tudo eu uso o innerHTML  ele ira escrever do jeito do html eo innerText fara do jeito que esta escrito no html sem os elementos ex: se eu colocar o <strong> e usar o innerHTML, ele ira sair em negrito, se eu usar o innerText, ele ira sair o <strong> esccrito junto, nao vai esta em negrito.
+        p1.style.color = "blue"
+        p1.style.background = "red"
+        p1.style.borderRadius = "50px"
+        p1.style.border = "1px solid black"
+        p1.style.padding = '50px'
+        corpo.style.margin = "150px"
+        div.style.background = 'white'
+        div.innerText = 'esta modificaçao e no javaScript'
+        // e tem como eu mudar as propriedades css como escrevi acima utilizando a variavel mais o style. e as suas condiçoes
+        var h2 = document.querySelector('#h2')
+        // o metodo mais atual no javaScript e usar o querySelector() pois se pegar os valores podem ser so o... p, id, e class so basta usar os valores do css que sao: .+class #+id eo seletor so o -> h2 
+        h2.innerText = 'seja macho e vai em frente !'
+        h2.style.background = 'red'
+        //do mesmo jeito posso modificar o css e usar ele para modificar o texto com o innerText
+    </script>
+</body>
+</html>

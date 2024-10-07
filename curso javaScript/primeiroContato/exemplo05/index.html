@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = prompt('qual seu nome? ')
+        // vamos pegar o valor do prompt e guardar dentro da variavel nome
+        document.write(`ola ${nome}. seu nome tem ${nome.length} letras. </br>`)
+        // o (document) e onde procuraremos valores dentro do nosso documento HTML e pegar os seus elementos, o (write) e para escrever as linhas no nosso documento e fazer as concatenaçoes normais, vamos falar sobre funcoes simples por exemplo o (length) que conta quantas letras tem oque escrever dentro do prompt e assim esta dentro da nossa concatenaçao ${nome.length}
+        document.write(`ola ${nome}, seu nome em maiusculo e assim ${nome.toUpperCase()}<br>`)
+        // do mesmo modelo acima temos o topUppercase() que e para deixar nossa string todas co letras maiusculas
+        document.write(`ola ${nome}, seu nopme em minusculo e ${nome.toLowerCase()}`)
+        // na mesma vibe tem o toLowercase() que deixa nossa string com letras minusculas
+    </script>
+</body>
+</html>

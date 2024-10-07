@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #area {
+            font:normal 20pt arial;
+            background: rgb(0, 0, 0);
+            color: white;
+            width: 200px;
+            height: 200px; 
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="area">
+       sem interaçao
+       <!-- para ter os eventos de click passar o mouse e sair o mouse tudo no html tem uma interaçao e posso colocar esses valores para atribuilos em uma funcition ex: onclick(clicar()) para clicar, onmouseenter(clicar2()) para quando o mouse passar por cima da div eo onmouseout(clicar3()) para quando o mouse sair da div, mas nos nao vamos usar elas vamos usar o addEvenvetListener(), pois os ouros tenho que atribuilos dentro da div ja esse e direto no JS -->
+    </div>
+    <script>
+
+        var click = document.querySelector('#area')
+        //com o querySelector eu pego o id da div
+        click.addEventListener('mouseenter', clicar)
+        //para atribuilo pego a variavel da div e adiciono o evento mouseenter 
+        click.addEventListener('mouseout', clicar2)
+        //o evento mouseout
+        click.addEventListener('click', clicar3)
+        //o evento mouse out na frente tenho o nome da function no caso clicar3()       
+        function clicar(){
+        // a funcaço so ira disparar quando o mouse passar pela div
+            click.style.background = 'red'
+            click.style.color = 'blue'
+            click.innerText = 'Mouse entrou na div!'
+            //e ira alterar  o seu estilo
+        }
+        function clicar2(){
+        //mesma coisa
+        click.style.background = 'blue'
+        click.style.color = 'red'
+        click.innerText = 'Mouse saiu da div!'
+        //ira alterar seu estilo para outro geito ao sair da div    
+    }
+        function clicar3() {
+           // qaundo clicar  ira alterar com a seguinte forma abaixo
+            click.style.background = "green"
+            click.style.color = 'white'
+            click.innerText = 'Clicou !'
+        }
+    </script>
+</body>
+</html>
